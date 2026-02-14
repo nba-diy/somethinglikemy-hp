@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Immigration Eligibility Check | Global Mobility Hub</title>
+
+<meta
+  name="description"
+  content="Explore your immigration and residence permit options with Global Mobility Hub. Receive clear, responsible guidance tailored to your destination and personal situation."
+/>
+
+  <!-- PAGE-SPECIFIC CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body class="immigration-page">
+
+
+<!-- Header -->
+<header id="header">
+	<h1 id="logo">
+		<a href="index.html">Home</a>
+	</h1>
+</header>
+
+
+
+<!-- ================= FORM WRAPPER ================= -->
+
+<div id="main" class="wrapper style1">
+  <div class="container">
+    <header class="major">
+      <h1>Immigration Eligibility Check</h1>
+      <p>
+        Answer a few short questions so we can assess your situation and provide
+        responsible, realistic guidance.
+      </p>
+    </header>
+  </div>
+</div>
+
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span>›</span>
+  <a href="immigration.html">Immigration</a>
+  <span>›</span>
+  <span>Application</span>
+</nav>
+
+
+
+  <!-- ================= FORM ================= -->
+  <form id="immigrationForm" class="multi-step-form contact-form">
+
+    <!-- PROGRESS -->
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+    <p class="step-label" id="stepLabel"></p>
+
+    <!-- STEP 1 -->
+    <div class="form-step active" data-step="personal">
+      <h3>Personal Information</h3>
+
+      <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text" name="fullName" placeholder="Your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label>Email Address *</label>
+        <input type="email" name="email" placeholder="you@email.com" required />
+      </div>
+
+      <button type="button" class="btn next">Next</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="form-step" data-step="destination">
+      <h3>Destination Country</h3>
+
+      <div class="form-group">
+        <label>Where do you plan to relocate?</label>
+        <select name="destination" required>
+          <option value="">Select destination</option>
+          <option>Hungary</option>
+          <option>Malta</option>
+          <option>EU Country</option>
+          <option>United Kingdom</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          name="otherDestination"
+          placeholder="Other destination (optional)"
+        />
+      </div>
+
+      <button type="button" class="btn prev">Back</button>
+      <button type="button" class="btn next">Next</button>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="form-step" data-step="permit">
+      <h3>Permit / Pathway Type</h3>
+
+      <div class="form-group">
+        <select name="permitType" required>
+          <option value="">Select permit type</option>
+          <option>Study-related residence permit</option>
+          <option>Work / Employment permit</option>
+          <option>Family reunification</option>
+          <option>EU / EEA registration</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          name="otherPermit"
+          placeholder="Other permit type (optional)"
+        />
+      </div>
+
+      <button type="button" class="btn prev">Back</button>
+      <button type="button" class="btn next">Next</button>
+    </div>
+
+    <!-- STEP 4 -->
+    <div class="form-step" data-step="citizenship">
+      <h3>Current Citizenship</h3>
+
+      <div class="form-group">
+        <input
+          type="text"
+          name="citizenship"
+          placeholder="Your current citizenship"
+          required
+        />
+      </div>
+
+      <button type="button" class="btn prev">Back</button>
+      <button type="button" class="btn next">Next</button>
+    </div>
+
+    <!-- STEP 5 -->
+    <div class="form-step" data-step="upload">
+      <h3>Supporting Documents</h3>
+      <p>Would you like to share documents now or later?</p>
+
+      <input type="radio" id="uploadYes" name="uploadChoice" value="yes">
+<label for="uploadYes">Yes, I can upload now</label>
+
+<input type="radio" id="uploadLater" name="uploadChoice" value="later" checked>
+<label for="uploadLater">I’ll share them later</label>
+
+      <div class="upload-area">
+        <input type="file" multiple />
+        <p class="upload-error error"></p>
+        <ul class="file-preview"></ul>
+      </div>
+
+      <button type="button" class="btn prev">Back</button>
+      <button type="button" class="btn next">Next</button>
+    </div>
+
+
+    <!-- STEP 6 -->
+    <div class="form-step" data-step="notes">
+      <h3>Additional Notes</h3>
+
+      <div class="form-group">
+        <textarea
+          name="notes"
+          rows="4"
+          placeholder="Tell us about your situation, timeline, or questions (optional)"
+        ></textarea>
+      </div>
+
+      <button type="button" class="btn prev">Back</button>
+      <button type="submit" class="btn-primary">
+        Submit Eligibility Check
+      </button>
+    </div>
+
+  </form>
+</section>
+
+
+
+<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					
+ <div class="footer-columns">
+
+        <div class="footer-column">
+            <h4>PLATFORM</h4>
+            <a href="clientportal.html">Client Portal</a>
+            <a href="partnerportal.html">Partner With Us</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>SERVICES</h4>
+            <a href="education.html">Study Abroad</a>
+            <a href="immigration.html">Residence Permit</a>
+            <a href="career.html">Career Development</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>LEGAL</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+
+    </div>
+
+  <p class="copyright">
+    © 2026 Global Mobility Hub. All rights reserved.
+  </p>
+
+				</footer>
+
+		</div>
+
+
+<!-- GLOBAL SCRIPT -->
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/script.js"></script>
+
+</body>
+</html>
